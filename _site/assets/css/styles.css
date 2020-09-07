@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 body { width: 100%; height: 100%; margin: 0; color: #FFFFFF; font-family: "Open Sans", sans-serif; }
 
-.home-page { background: linear-gradient(to top, #1F90C0, #3F3CF3); height: 100vh; margin: 0; }
+.home-page, .privacy-page { background: linear-gradient(to top, #1F90C0, #3F3CF3); height: 100vh; margin: 0; }
 
-p { padding: 0; margin: 0; }
+p, h1, h2 { padding: 0; margin: 0; }
 
 a { font-weight: bold; text-decoration: none; color: #FFFFFF; }
 
@@ -20,25 +20,14 @@ a { font-weight: bold; text-decoration: none; color: #FFFFFF; }
     filter: blur(0px);
     opacity: 1; } }
 
-.home-page .group2 .rectangle { width: 100%; height: 8px; top: 620px; background: #FFFFFF; }
-
-.privacy { position: absolute; width: 90px; height: 18px; left: 684px; top: 973px; font-family: 'Open Sans', sans-serif; font-style: normal; font-weight: bold; font-size: 13px; line-height: 18px; /* identical to box height */ display: flex; align-items: center; text-align: center; color: #FFFFFF; }
-
-.location { animation: puff 1s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
-
-@keyframes puff { 0% { transform: scale(2);
-    filter: blur(4px);
-    opacity: 0; }
-  100% { transform: scale(1);
-    filter: blur(0px);
-    opacity: 1; } }
-
-.rectangle { animation: slide-right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+.home-page .group2 .rectangle { width: auto; height: 8px; top: 620px; background: #FFFFFF; animation: slide-right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @keyframes slide-right { 0% { transform: translateX(1000px);
     opacity: 0; }
   100% { transform: translateX(0);
     opacity: 1; } }
+
+.home-page .privacy-link { width: 90px; height: 18px; font-size: 13px; line-height: 18px; position: absolute; bottom: 3.2%; }
 
 /* Privacy Page */
 .group4 { width: 910px; height: 136px; padding-left: 32px; padding-top: 32px; }
