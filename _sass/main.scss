@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 $font-stack:    "Open Sans", sans-serif;
 $primary-color:  #FFFFFF;
+
 //body set up for display for individual devices
 body{
     width: 100%;
     height: 100%;
     margin:0;
+    font-size: 16px;
     color: $primary-color;
     font-family: $font-stack;
 }
@@ -14,6 +16,7 @@ body{
     background:linear-gradient(to top, #1F90C0, #3F3CF3 ) ;
     height: 100vh;
     margin:0;  
+    padding: 5px;
 }
 //removal of presets variables 
 p, h1, h2{
@@ -92,48 +95,36 @@ a{
 
 
 /* Privacy Page */
-.group4{
-    width: 910px;
-    height: 136px;
-    padding-left: 32px;
-    padding-top: 32px;
-}
-.privacy-policy{
-    margin:0;
-    width: 494px;
-    height: 82px;   
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 98px;
-    color: #FFFFFF;
-}
-.info-privacy{
-    width: 910px;
-    height: 22px;
-    font-family: Open Sans;
-    padding-top: 32px;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
+
+.privacy-page{
+        .group4{
+            padding-top: 32px;
+            padding-left:32px;
+            padding-right: 32px;
+                .privacy-policy{
+                    font-weight: bold;
+                    font-size: 72px;
+                    line-height: 98px;
+                }
+                .info-privacy{
+                    padding-top:32px;
+                    font-size: 2vh;
+   
+                }
+        }   
+        .home-link{
+            position: absolute;
+            width: 39px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            height: 18px;
+            font-size: 13px;
+            bottom: 3.2%;
+
+        }
 
 }
-#home-link{
-    padding-top: 805px;
-    
-}
-.home-link{
-    display: flex;
-   justify-content: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 18px;
-    
-    
 
-}
+
