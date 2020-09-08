@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * { overflow: hidden; }
 
-body { color: #FFFFFF; font-family: "Open Sans", sans-serif; margin: 0; }
+body { width: 100%; height: 100%; color: #FFFFFF; font-family: "Open Sans", sans-serif; margin: 0; }
 
 .home-page, .privacy-page { background: linear-gradient(to top, #1F90C0, #3F3CF3); min-height: 100vh; }
 
@@ -34,7 +34,7 @@ a { font-weight: bold; text-decoration: none; color: #FFFFFF; }
 
 .privacy-page .group4 .privacy-policy { font-weight: bold; font-size: 72px; line-height: 98px; }
 
-.privacy-page .group4 .info-privacy { padding-top: 32px; font-size: 2vh; }
+.privacy-page .group4 .info-privacy { padding-top: 32px; font-size: 1.5vh; }
 
 .privacy-page .home-link { position: absolute; width: 39px; left: 0; right: 0; margin-left: auto; margin-right: auto; height: 18px; font-size: 13px; bottom: 3.2%; }
 
