@@ -12,6 +12,7 @@ body{
     color: $primary-color;
     font-family: $font-stack;
     margin: 0;
+    overflow-x: hidden;
 }
 //gradient is set from top to bottom and view height set to 100%
 .home-page, .privacy-page{
