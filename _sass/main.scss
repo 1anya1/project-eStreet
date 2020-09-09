@@ -24,6 +24,7 @@ body{
 p, h1, h2{
     padding:0;
     margin:0;
+    font-style: normal;
 }
 a{
     font-weight: bold;
@@ -46,11 +47,8 @@ a{
             .your-city{
                 font-size: 64px;
                 line-height: 87px;  
-                font-style: normal;
                 font-weight: 400;
                 @include small{
-                    height: 33px;
-                    top: 358px;
                     font-size: 24px;
                     line-height: 33px;  
                   }
@@ -58,7 +56,6 @@ a{
         }
         .group2{
             .location{
-                font-style: normal;
                 font-weight: 700;
                 font-size: 72px;
                 line-height: 98px;
@@ -76,14 +73,9 @@ a{
                     }
               } 
               @include small{
-                width: 215px;
-                height: 49px;
-                left: 80px;
-                top: 405px;
                 font-size: 36px;
                 line-height: 49px;  
-              }
-              
+              } 
             }
             .rectangle{
                 width: auto;
@@ -105,16 +97,10 @@ a{
 
             }
             .privacy-link{
-                width: 90px;
-                height: 18px;
+                position: absolute;
                 font-size: 13px;
                 line-height: 18px;
-                position: absolute;
-                top: 95vh;
-            @include small{
-                top: 94.6vh;
-              }
-
+                top: 95%;
             }
 }
 
@@ -125,13 +111,15 @@ a{
         .group4{
             padding-top: 32px;
             padding-left:32px;
+            @include small{
+                padding-left: 24px;
+                padding-right:24px;
+              }
                 .privacy-policy{
                     font-weight: bold;
                     font-size: 72px;
                     line-height: 98px;
                     @include small{
-                        left: 24px;
-                        top: 32px; 
                         font-size: 36px;
                         line-height: 49px;
                       }
@@ -140,9 +128,7 @@ a{
                     padding-top:32px;
                     font-size: 16px ;
                     @include small{
-                        width: 327px;
-                        left: 24px;
-                        top: 113px;
+                       padding-top: 32px;
                         font-size: 16px;
                         line-height: 22px;          
                       }
@@ -151,18 +137,13 @@ a{
         }   
         .home-link{
             position: absolute;
-            width: 39px;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
             height: 18px;
             font-size: 13px;
-            top: 95vh;
-            @include small{
-                top: 94.6vh;
-              }
-
+            top: 95%;
         }
 
 }
