@@ -125,15 +125,27 @@ a{
         .group4{
             padding-top: 32px;
             padding-left:32px;
-            padding-right: 32px;
                 .privacy-policy{
                     font-weight: bold;
                     font-size: 72px;
                     line-height: 98px;
+                    @include small{
+                        left: 24px;
+                        top: 32px; 
+                        font-size: 36px;
+                        line-height: 49px;
+                      }
                 }
                 .info-privacy{
                     padding-top:32px;
-                    font-size: 1.9vh;
+                    font-size: 16px ;
+                    @include small{
+                        width: 327px;
+                        left: 24px;
+                        top: 113px;
+                        font-size: 16px;
+                        line-height: 22px;          
+                      }
    
                 }
         }   
@@ -146,7 +158,10 @@ a{
             margin-right: auto;
             height: 18px;
             font-size: 13px;
-            bottom: 1rem;
+            top: 973px;
+            @include small{
+                top: 768px;
+              }
 
         }
 
