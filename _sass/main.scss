@@ -21,13 +21,8 @@ body{
 //gradient is set from top to bottom and view height set to 100%
 .home-page, .privacy-page{
     background:linear-gradient(to top, #1F90C0, #3F3CF3 ) ;
-    min-height: 100vh;
-    @include small{
-        padding-bottom: env(safe-area-insert-bottom);
-        padding-top: env(safe-area-insert-top);
-        
-      }
-    
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 
 }
 //removal of presets variables 

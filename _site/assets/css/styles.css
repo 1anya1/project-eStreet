@@ -3,9 +3,7 @@
 
 body { color: #FFFFFF; font-family: "Open Sans", sans-serif; margin: 0; height: 100%; width: 100%; }
 
-.home-page, .privacy-page { background: linear-gradient(to top, #1F90C0, #3F3CF3); min-height: 100vh; }
-
-@media only screen and (max-width: 580px) { .home-page, .privacy-page { padding-bottom: env(safe-area-insert-bottom); padding-top: env(safe-area-insert-top); } }
+.home-page, .privacy-page { background: linear-gradient(to top, #1F90C0, #3F3CF3); height: 100vh; height: calc(var(--vh, 1vh) * 100); }
 
 p, h1, h2 { padding: 0; margin: 0; font-style: normal; }
 
