@@ -22,6 +22,9 @@ body{
 .home-page, .privacy-page{
     background:linear-gradient(to top, #1F90C0, #3F3CF3 ) ;
     height: calc(var(--vh, 1vh) * 100);
+    padding-left: env(safe-area-insert-left);
+    padding-right: env(safe-area-insert-right);
+    
 
 }
 //removal of presets variables 
