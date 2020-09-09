@@ -5,11 +5,13 @@ body { color: #FFFFFF; font-family: "Open Sans", sans-serif; margin: 0; height: 
 
 .home-page, .privacy-page { background: linear-gradient(to top, #1F90C0, #3F3CF3); min-height: 100vh; }
 
+@media only screen and (max-width: 580px) { .home-page, .privacy-page { padding-bottom: env(safe-area-insert-bottom); padding-top: env(safe-area-insert-top); } }
+
 p, h1, h2 { padding: 0; margin: 0; font-style: normal; }
 
 a { font-weight: bold; text-decoration: none; color: #FFFFFF; }
 
-.home-page { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.home-page { display: flex; align-items: center; justify-content: center; text-align: center; }
 
 .home-page .group1 .your-city { font-size: 64px; line-height: 87px; font-weight: 400; }
 
@@ -31,7 +33,7 @@ a { font-weight: bold; text-decoration: none; color: #FFFFFF; }
   100% { transform: translateX(0);
     opacity: 1; } }
 
-.home-page .privacy-link { position: absolute; font-size: 13px; line-height: 18px; top: 768px; }
+.home-page .privacy-link { position: absolute; font-size: 13px; line-height: 18px; top: 95vh; }
 
 /* Privacy Page */
 .privacy-page .group4 { padding-top: 32px; padding-left: 32px; }
@@ -46,6 +48,6 @@ a { font-weight: bold; text-decoration: none; color: #FFFFFF; }
 
 @media only screen and (max-width: 580px) { .privacy-page .group4 .info-privacy { padding-top: 32px; font-size: 16px; line-height: 22px; } }
 
-.privacy-page .home-link { position: absolute; width: 39px; left: 0; right: 0; margin-left: auto; margin-right: auto; height: 18px; font-size: 13px; top: 768px; }
+.privacy-page .home-link { position: absolute; width: 39px; left: 0; right: 0; margin-left: auto; margin-right: auto; height: 18px; font-size: 13px; top: 95vh; }
 
 /*# sourceMappingURL=styles.css.map */

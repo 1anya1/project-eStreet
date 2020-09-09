@@ -13,10 +13,20 @@ body{
     height: 100%;
     width: 100%;
 }
+@mixin small {
+    @media only screen and (max-width: 580px) {
+      @content;
+    }
+  }
 //gradient is set from top to bottom and view height set to 100%
 .home-page, .privacy-page{
     background:linear-gradient(to top, #1F90C0, #3F3CF3 ) ;
     min-height: 100vh;
+    @include small{
+        padding-bottom: env(safe-area-insert-bottom);
+        padding-top: env(safe-area-insert-top);
+        
+      }
     
 
 }
@@ -31,15 +41,10 @@ a{
     text-decoration: none;
     color: $primary-color;
 }
-@mixin small {
-    @media only screen and (max-width: 580px) {
-      @content;
-    }
-  }
+
 //<---------HOME PAGE LAYOUT-------------->
 .home-page{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -100,7 +105,7 @@ a{
                 position: absolute;
                 font-size: 13px;
                 line-height: 18px;
-                top: 768px;
+                top: 95vh;
             }
 }
 
@@ -144,7 +149,7 @@ a{
             margin-right: auto;
             height: 18px;
             font-size: 13px;
-            top: 768px;
+            top: 95vh;
         }
 
 }
