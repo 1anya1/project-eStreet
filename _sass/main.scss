@@ -110,10 +110,10 @@ a{
                 font-size: 13px;
                 line-height: 18px;
                 position: absolute;
-                bottom: 3.2%;
-                @include small{
-                    top: 768px;
-                  }
+                top: 95vh;
+            @include small{
+                top: 94.6vh;
+              }
 
             }
 }
@@ -158,9 +158,9 @@ a{
             margin-right: auto;
             height: 18px;
             font-size: 13px;
-            top: 973px;
+            top: 95vh;
             @include small{
-                top: 768px;
+                top: 94.6vh;
               }
 
         }
