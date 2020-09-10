@@ -1,3 +1,3 @@
 # project-eStreet
  
- link to deployed site: e-street-project.netlify.app/
+ link to deployed site: https://e-street-project.netlify.app/
